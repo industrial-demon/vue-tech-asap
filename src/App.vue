@@ -6,17 +6,16 @@ const router = useRouter()
 
 const login = ref(false)
 
-setTimeout(() => (login.value = true), 6000)
-watch(login, () => {
-    if (login.value) {
-        router.push('/dashboard')
-    }
-})
 </script>
 
 <template>
+    <div>
     HELLObout
-    {{ login }}
+    <RouterLink to="/learn-patterns"> Learn Patterns</RouterLink>
+    <RouterLink to="/dashboard">Dashboard</RouterLink>
+
+
+    </div>
     <RouterView></RouterView>
 </template>
 

@@ -63,6 +63,7 @@ import {
 .header {
   height: 92px;
   display: flex;
+  overflow: hidden;
 }
 
 .logo {
